@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+</head>
+<body>
+    
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
+        <canvas id="mycanvas" width="350" height="350" class="glowing-border">
+        Sorry Your Browser Doesn't Supports Canvas
+        </canvas>
+        </div>
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <!-- <h3>Pattern Connections</h3> -->
+        <p id="pattern">Pattern lock  code will appear here </p>
+        </div>
+
+
+        
+        <div class="col-md-4 col-md-offset-4 text-center">
+        <button id="show"  onclick="toggleDiv()">SHOW PATTERN</button>
+        
+         
+        </div>
+        <div class="col-md-4 col-md-offset-4 panel-body">
+        </div>
+        </div>
+
+        
+        <div id="example" class="example">
+
+            <div class="rowdot">
+                <div class="dot">1</div>
+                <div class="dot">4</div>
+                <div class="dot">7</div>
+            </div>
+            <div class="rowdot">
+                <div class="dot">2</div>
+                <div class="dot">5</div>
+                <div class="dot">8</div>
+            </div>
+            <div class="rowdot">
+                <div class="dot">3</div>
+                <div class="dot">6</div>
+                <div class="dot">9</div>
+            </div>
+          
+        </div>
+<div class="heade">Please Open in Desktop/PC/Laptop  <br> <i class="fa-solid fa-desktop"></i></div>
+
+<script>
+     let isTextVisible = true;
+    function toggleDiv() {
+        var div = document.getElementById('example');
+
+        var btn = document.getElementById('show');
+       
+        isTextVisible = !isTextVisible;
+    if (div.style.opacity === '1' || div.style.opacity === '') {
+      div.style.opacity = '0';
+      btn.textContent="SHOW PATTERN";
+    } else {
+      div.style.opacity = '1';
+      btn.textContent="HIDE PATTERN";
+    }
+  }
+    
+
+
+</script>
+
+
+        <script
+                      src="https://code.jquery.com/jquery-3.3.1.min.js"
+                      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                      crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

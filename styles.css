@@ -1,0 +1,137 @@
+#mycanvas{
+	cursor: pointer;
+	border-radius: 50px;
+	margin-top: 25px;
+  }
+  .glowing-border {
+	  /* border: 2px solid #dadada; */
+	  /* border-radius: 7px; */
+	outline: none;
+	  /* border-color: #9ecaed; */
+	  /* box-shadow: 0 0 10px #9ecaed; */
+  }
+
+
+  #pattern{
+
+	border: solid 1px white;
+	border-radius: 5px;
+	padding: 18px;
+	font-size: 27px;
+	font-family: cursive;
+	text-transform: capitalize;
+  }
+
+  body{
+	background:url('back1.avif'),rgba(0,0,0,0.3);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	
+  }
+
+
+
+  *{
+	box-sizing: border-box;
+	overflow-x: hidden;
+
+  }
+
+
+
+
+  .example{
+	background: white;
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	width: 140px;
+	height: 140px;
+	border-radius: 9px;
+	display: flex;
+	 flex-direction: column;
+	 row-gap: 10px;
+	 display: flex;
+	 align-items: center;
+	 
+	 justify-content: center;
+	 box-shadow: rgba(1, 1, 0, 1.24) 0px 3px 8px;
+	 position: absolute;
+	 bottom: 54%;
+	 left: 8%;
+	 transition: opacity 0.5s;
+	 opacity: 0;
+	 /* right: 5%; */
+	 /* right: 1%; */
+	 /* padding: 5px; */
+	
+  }
+
+
+  #show{
+	color: rgba(0, 0, 0, 0.662);
+	/* background:  linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+	/* transition: background-color 0.3s, color 0.3s; */
+	background-color: transparent;
+	border: solid 1px white;
+	/* border: none; */
+	outline: 0;
+	width: 180px;
+	height: 60px;
+	color: white;
+	cursor: pointer;
+	border-radius: 7px;
+	font-size: 18px;
+	font-family: cursive;
+	text-transform: capitalize;
+  }
+  .example .rowdot{
+	display: flex;
+	column-gap: 10px;
+	 
+	 
+  }
+
+  .example .rowdot .dot{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	border: solid 1px rgb(9, 58, 88);
+	color: black;
+	display: flex;
+	 align-items: center;
+	 justify-content: center;
+  }
+
+  .row{
+	/* display: none; */
+	
+  }
+
+.heade{
+	display: none;
+}
+  @media screen and (max-width: 540px) {
+	.row{
+		display: none;
+	  }
+	 body{
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+	 }
+	.heade{
+		display: block;
+		text-align: center;
+		font-size: 34px;
+		text-wrap: wrap;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+
+
+	/* Your CSS rules for mobile devices with a viewport width of 480px or less go here */
+	/* For example, you can apply styles for smaller screens within this block */
+  }
